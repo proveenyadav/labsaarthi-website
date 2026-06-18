@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import FadeUp from "components/FadeUp";
+import FadeUp from "@/components/FadeUp";
 
 export default function Hero() {
   return (
