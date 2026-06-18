@@ -2,19 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className="pt-40 pb-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* Left */}
-
           <div>
-
             <div className="inline-flex items-center px-4 py-2 rounded-full border border-teal-200 bg-white text-teal-700 text-sm font-medium">
               Powered by IQ-Line
             </div>
@@ -60,40 +56,17 @@ export default function Hero() {
                 <span>Digital India</span>
               </div>
             </div>
-
           </div>
 
           {/* Right */}
-
           <div className="relative">
-
-            <motion.div
-  className="relative"
-  animate={{
-    y: [0, -12, 0],
-  }}
-  transition={{
-    duration: 6,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
->
-
-  <Image
-    src="/platform-dashboard.png"
-    alt="LabSaarthi Dashboard"
-    width={1200}
-    height={900}
-    className="
-w-full
-transition-all
-duration-700
-hover:scale-[1.02]
-drop-shadow-[0_30px_80px_rgba(0,0,0,0.18)]
-"
-  />
-
-</motion.div>
+            <Image
+              src="/platform-dashboard.png"
+              alt="LabSaarthi Dashboard"
+              width={1200}
+              height={900}
+              className="w-full drop-shadow-[0_30px_80px_rgba(0,0,0,0.18)]"
+            />
 
             <div className="absolute -bottom-8 -left-8 bg-white shadow-xl rounded-2xl p-4 border">
               <p className="text-sm font-semibold">
@@ -104,13 +77,10 @@ drop-shadow-[0_30px_80px_rgba(0,0,0,0.18)]
                 via WhatsApp ✓
               </p>
             </div>
-
           </div>
 
         </div>
-
       </div>
-
     </section>
   );
 }
