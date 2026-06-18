@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "./FadeUp";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
